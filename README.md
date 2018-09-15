@@ -5,7 +5,7 @@ This Dockerfile runs a rserver and contains a script for super simple user addit
 If needed add wanted packages in the install_packages.R. They will be installed on build-time.
 Build with `build . -t rserver`, then run with:
 ```
-docker run -d -p 8787:8787 -v /path/on/host:/home --name rstudio_server rserver
+docker run -d -p port_on_host:8787 -v /path/on/host:/home --name rstudio_server rserver
 ```
 make sure everyone has write-access on the /path/on/host folder. `chmod -R 777 /path/on/host` for example.
 
