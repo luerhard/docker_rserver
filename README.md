@@ -1,5 +1,5 @@
 # Docker Rserver for Multiuser-setup 
-This Dockerfile runs a rserver and contains a script for super simple user addition on the server. All users share the .libPaths() and are allowed to install packages.
+This Dockerfile runs a rserver and contains a script for super simple user addition on the server. All users share the .libPaths(), are allowed to install packages but have separate working directories.
 
 # Usage
 If needed add wanted packages in the install_packages.R. They will be installed on build-time.
