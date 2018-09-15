@@ -18,3 +18,6 @@ Only the user rstudio can add new users. To add new a new user log in as rstudio
 sudo bash /usr/new_user.sh new_user_name user_password
 ```
 to create a new user `new_user_name` with the password `user_password`. Make sure to tell all new users to change their password immediatly as explained in section "Root-User".
+
+## rocker/rstudio-stable
+A large part of the Dockerfile ist copied from rocker/rstudio-stable.
